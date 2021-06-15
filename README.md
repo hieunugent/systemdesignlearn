@@ -1,3 +1,4 @@
+
 # systemdesignlearn
 ## CLient and Server Model 
 - client:
@@ -7,4 +8,4 @@
     - A machine or proceess that provides data or service for client , usually by listening for incoming networki calls 
 - Client -Server Model:
     - the paradigm by which modern systems asre designed , which consists of clients requesting data or service from servers and servers providing data or serviceto clients
-- 
+- ![ipaddress](https://user-images.githubusercontent.com/22860697/122001372-1a34f000-cd65-11eb-8b65-df9575e1ad41.JPG)
