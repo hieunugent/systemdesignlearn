@@ -21,4 +21,15 @@
         - 443: Https
 - DNS
     - short for domain name system, it describes the entities and protocal involved in the translation from domain names to IP address. Typically, machines make a DNS query to a well known entity which is responsible for returning teh IP address( or multiple one) of the requested domain name in the response
-
+- IP 
+    - Internet Protocol, this network protocol outlines how almost all machine-to-machine communication should in the world. Other protocols like TCP, UDP adn HTTP are built on top of IP
+- TCP
+    - network protocol built on top of the inteenet Prrotocol. Allows for orderd  reliable data delivery between machines over the  public internet by creating a connection 
+    - TCP is ususlly implemented in kenel, which exposes sockets to application that they can use to steam data through an open connection
+- HTTP
+    - the hypertext TRanfer protocol is a very commmon network protocol implemented on top of TCP. clients make HTTP requests. servers repond with a response
+    - ![tcp](https://user-images.githubusercontent.com/22860697/124317352-e3642580-db2b-11eb-9113-587ca97ffa5b.JPG)
+- IP packet
+    - someytimes more broadly referred to as just a network packet, an IP packet is effectively the smalllest unit used to describe data beingsent ove IP, aside form bytes. AN IP packet consist of:
+        - an IP header, which contains teh source and destination IP addresses as well ass other information related to the network
+        - a payload, which is just the data being sent over the network
