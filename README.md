@@ -34,5 +34,7 @@
         - an IP header, which contains teh source and destination IP addresses as well ass other information related to the network
         - a payload, which is just the data being sent over the network
 # network protocals 
- - IP packets TCp header HTTPS request, As Dauting as they may seem these low level networking conscepting are essential to understanding how machine in a system commuinicate with one another. And as we all know, proper communication is key for thriving relationships
- 
+ - IP packets TCP header HTTPS request, As Dauting as they may seem these low level networking conscepting are essential to understanding how machine in a system communicate with one another. And as we all know, proper communication is key for thriving relationships
+# Database 
+- get data and store data
+- curl send and get data from the server
