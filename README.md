@@ -35,6 +35,7 @@
         - a payload, which is just the data being sent over the network
 # network protocals 
  - IP packets TCP header HTTPS request, As Dauting as they may seem these low level networking concepting are essential to understanding how machine in a system communicate with one another. And as we all know, proper communication is key for thriving relationships
+ - Key term : IP, TCP, HTTP, IP Packet
 # Storage 
 - get data and store data
 - curl send and get data from the server
