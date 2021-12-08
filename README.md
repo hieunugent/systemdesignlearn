@@ -26,7 +26,7 @@
 - TCP
     - network protocol built on top of the inteenet Prrotocol. Allows for orderd  reliable data delivery between machines over the  public internet by creating a connection 
     - TCP is ususlly implemented in kenel, which exposes sockets to application that they can use to steam data through an open connection
-- HTTP
+- HT
     - the hypertext TRanfer protocol is a very commmon network protocol implemented on top of TCP. clients make HTTP requests. servers repond with a response
     - ![tcp](https://user-images.githubusercontent.com/22860697/124317352-e3642580-db2b-11eb-9113-587ca97ffa5b.JPG)
 - IP packet
@@ -45,4 +45,6 @@
 - Disk 
 - Memory
 - Persistent Storage
-
+# Latency and Throughput
+- Latency: the time is takes for a certain operation in a system. Most Often this measure is time duration like milliseconds or seconds, 
+- Throughput: the number of operations that a system can handle properly per time unit. For intance the through put of a server can offen be measured in request per second (RPS or QRS)
