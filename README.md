@@ -33,3 +33,6 @@
     - someytimes more broadly referred to as just a network packet, an IP packet is effectively the smalllest unit used to describe data beingsent ove IP, aside form bytes. AN IP packet consist of:
         - an IP header, which contains teh source and destination IP addresses as well ass other information related to the network
         - a payload, which is just the data being sent over the network
+# network protocals 
+ - IP packets TCp header HTTPS request, As Dauting as they may seem these low level networking conscepting are essential to understanding how machine in a system commuinicate with one another. And as we all know, proper communication is key for thriving relationships
+ 
