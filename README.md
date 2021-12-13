@@ -46,5 +46,14 @@
 - Memory
 - Persistent Storage
 # Latency and Throughput
-- Latency: the time is takes for a certain operation in a system. Most Often this measure is time duration like milliseconds or seconds, 
+- Latency: the time is takes for a certain operation in a system. Most Often this measure is time duration like milliseconds or seconds. 
+     - Hierarchy: read or tranfer 1MB : RAM (.25ms) SSD (1ms) Network (10ms) HDD (20ms) Inter-continetal Round Trip(150ms)
 - Throughput: the number of operations that a system can handle properly per time unit. For intance the through put of a server can offen be measured in request per second (RPS or QRS)
+# Availability
+- Process
+- Server
+- Node/Instance/Host
+- Redundancy : one example is LBS, passive(airplane engine) and Active (only one of the machine has main role)
+- Nine
+- SLA
+- SLO
