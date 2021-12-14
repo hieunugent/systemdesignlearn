@@ -53,7 +53,7 @@
 - Process
 - Server
 - Node/Instance/Host
-- Redundancy
+- Redundancy : one example is LBS, passive(airplane engine) and Active (only one of the machine has main role)
 - Nine
 - SLA
 - SLO
