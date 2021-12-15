@@ -53,7 +53,14 @@
 - Process
 - Server
 - Node/Instance/Host
-- Redundancy : one example is LBS, passive(airplane engine) and Active (only one of the machine has main role)
+- Redundancy : one example is LBS,  passive(airplane engine) and Active (only one of the machine has main role)
 - Nine
 - SLA
 - SLO
+# Caching :
+- can be done as Hardware or software
+- can be between Client and Server and Database
+- the ideal for caching is to reduce amount of network request
+- boost up the computational, or data recently or frequently access
+- reduce the overload rate
+- ex: of a post web,store in database and caching , when edit it also overite the database and caching ,  write through caching 
