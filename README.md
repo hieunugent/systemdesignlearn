@@ -63,4 +63,8 @@
 - the ideal for caching is to reduce amount of network request
 - boost up the computational, or data recently or frequently access
 - reduce the overload rate
-- ex: of a post web,store in database and caching , when edit it also overite the database and caching ,  write through caching 
+- ex: of a post web, store in database and caching , when edit it also overite the database and caching ,  write through caching 
+- writeback caching , only cach will update and sometime in future will update data
+- depend on type of data design the caching, such as comment or view count, 
+- imutable data  or some other type
+- 
