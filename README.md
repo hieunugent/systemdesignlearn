@@ -82,3 +82,7 @@
 - HW or SW LB
 - round-robin: method go through all server in one order.
 - IP base: hash the ip address of the client to distribute server for client, 
+# Hashing: 
+- Consistent Hashing: Type of hashing that miminizeds the number of key that need to be remapped when a hash table get ressized. it's often used by load balancer to distribute traffic to server; It minimizers the number of request that get forwarded to differebt servers are add or when existing servers are brought down
+- Rendezvous Hashing : A type of hashing also coined highest random weight hashing. Allows  for minimal redistribution of mapping when a server goes down
+- SHA- Secure hash ALgorithms, which is collection of cryptographic hash functions used in the industry, these days , SHA-3 is a popilar choice to use in a system
