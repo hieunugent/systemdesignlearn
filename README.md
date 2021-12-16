@@ -67,4 +67,18 @@
 - writeback caching , only cach will update and sometime in future will update data
 - depend on type of data design the caching, such as comment or view count, 
 - imutable data  or some other type
-- 
+# Proxies : 
+- Forward Proxy: A server sits between  a client and servers and acts on behalf of the client, Typically used to mask the clinet's identity (Ip address) Note that forward  proxies are often referred to as just proxies 
+- hide identity of client from proxy
+- Reverse Proxy: a Server that sit between clients and servers and ac on behalf of the servers, typically used for logging, load balancing, or caching
+- filter out some request or logging system
+- can act as a shield to distribute the request to server
+# load balancer: 
+- more request more change of failure
+- LB help horiontal increase
+- load balancer: A type of reverse proxy that distributes traffic across servers. LB can be found in many parts of a system, form the DNS layer all the way to the databases layer.
+- Server-Selection Strategy: how a LB chooses servers when distributing traffic amongst multiple servers. Commonly used strategies include round-robin, random selection, performance metrics, like the fastest reponse time or the least amount of traffic), and IP-based routing.
+- Hot Spot: when distributing a workload across a set of servers, that workload might be spread unevenly. this can happen if your sharding key or your hashing function are suboptimal, or if your workload is naturally skewed: some servers will receive a lot more traffic than other, thus creating a "hot spot"
+- HW or SW LB
+- round-robin: method go through all server in one order.
+- IP base: hash the ip address of the client to distribute server for client, 
