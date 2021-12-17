@@ -85,4 +85,19 @@
 # Hashing: 
 - Consistent Hashing: Type of hashing that miminizeds the number of key that need to be remapped when a hash table get ressized. it's often used by load balancer to distribute traffic to server; It minimizers the number of request that get forwarded to differebt servers are add or when existing servers are brought down
 - Rendezvous Hashing : A type of hashing also coined highest random weight hashing. Allows  for minimal redistribution of mapping when a server goes down
-- SHA- Secure hash ALgorithms, which is collection of cryptographic hash functions used in the industry, these days , SHA-3 is a popilar choice to use in a system
+- SHA- Secure hash ALgorithms, which is collection of cryptographic hash functions used in the industry, these days, SHA-3 is a popular choice to use in a system
+# Relational databases: 
+- database: record data and query data.they themselves servers that are long lived and  interact with the rest of your application through network calls, with protocols in tip of TCP or even HTTP. often save in disk
+- DISK: HDD , SSD, non-volatile storage
+- SQL
+- ACID transaction
+    - ATomicity : either all succeed or all fail
+    - Consistency : the transaction cannot bring the database to an invalid state. rule stay the same after record
+    - Isolation : the execution of multiple transactions concurrently will have the same effect as if they had been executed sequentially 
+    - Durability : any committed transaction is written to non-volatile storage. it will not be undone by a crash, power loss, or network partition.
+ - database index 
+    - a special auxiliary data structure that allows your database to perform certain queried much faster. Indexes can typically only exist to reference structure data, like data stored in relational databases. create an index on one or multiple column in your databases to greatly speed up READ queries that you run very often. with the downside of slightly longer WRITE to your database, since writes have to also take place in the relevant index    
+- Strong consistency
+    - Strong COnsistency usually refer to the consistency of ACID transactions, as opposed to Eventual Consistency
+- Eventual Consistency
+    - A consistency model which is unlike Strong consistency. In this model, reads might return a view of the system that is stale. An eventually consistent datastore will give guarantees that the state of the database will eventually reflect writes within a time period
