@@ -101,3 +101,5 @@
     - Strong COnsistency usually refer to the consistency of ACID transactions, as opposed to Eventual Consistency
 - Eventual Consistency
     - A consistency model which is unlike Strong consistency. In this model, reads might return a view of the system that is stale. An eventually consistent datastore will give guarantees that the state of the database will eventually reflect writes within a time period
+# key-Value Store ; 
+- is a flexible NoSQL database that often used for caching and dynamic configuration. Popular options include DynamoDB, ETCD, Redis, adn ZooKeeper
