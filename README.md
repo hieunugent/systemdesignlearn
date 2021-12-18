@@ -103,3 +103,10 @@
     - A consistency model which is unlike Strong consistency. In this model, reads might return a view of the system that is stale. An eventually consistent datastore will give guarantees that the state of the database will eventually reflect writes within a time period
 # key-Value Store ; 
 - is a flexible NoSQL database that often used for caching and dynamic configuration. Popular options include DynamoDB, ETCD, Redis, adn ZooKeeper
+# Specialized Storage Paradigms: 
+- Blob storage: small and large scale system, allow the user to store and retrieve data based on the name if the blob. this is sort of like  akey value store but usualy blob stores have different guarantees. they might be slower than kv store but values can be megabytes large.Usually people user this to store things like Large binaries, Database snapshot, or images and other static assets that a website might have; blob storage is rathe complicated to have premise, and only giant companies like Google nad AMazon have infrastructure that supports it.so usually in the context of SYtem design interviews you can assume that you will be able to use GCS or S3. these are blob storage services hosted by Google and Amazonrespectively, that cost money depending on how much storage you use and how often you store and retrieve blobs form that storage.
+- Time Series Database: a TSDB is a special kind of database optimized for storing and analyzing time-indexed data; data points that specifically occur at a given moment in time
+- Graph Database: storing data following that graph data model. data entries in a graph database can have explicitly define relationships much like nodes in a graph can have edges; GD take advantage  pf their underlying graph stucture to perform complex queries on deeply connected data very fast; GD are thus often preferred to relational databases when dealing with systems where data points naturally form a graph and have multiple levels of relationships. for example. social networks
+- Cypher
+- Spatial Database
+- Quadtree
