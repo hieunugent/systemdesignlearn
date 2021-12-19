@@ -113,3 +113,5 @@
 ```
 - Spatial Database: a type of database optimized for storing and querying spatial data like location on a map. Spatial databases rely on spatial indexes like quadtrees to quickly perform spatial queries like finding all locations in the vicinity of a region
 - Quadtree
+  - A tree data structure most commonly used to index two dimensional spatial data. Each node in a quadtree has either zero children nodes or exactly four children nodes.
+  - typically , Quadtree nodes contain some form of spatial data-- for example, locations on a map-- with a maximum capacity of some specified number n. So long as nodes aren't at capacity, they remain leaf nodes; once they reach capacity, they're given four children nodes, and their data enties are split across the four children nodes 
