@@ -115,10 +115,16 @@
 - Quadtree
   - A tree data structure most commonly used to index two dimensional spatial data. Each node in a quadtree has either zero children nodes or exactly four children nodes.
   - typically , Quadtree nodes contain some form of spatial data-- for example, locations on a map-- with a maximum capacity of some specified number n. So long as nodes aren't at capacity, they remain leaf nodes; once they reach capacity, they're given four children nodes, and their data enties are split across the four children nodes 
-  - A quadtree lend itself well to storing spatial data because it can be represented as a grid filled with rectangles that are recursively subdivided into four sub-rectangles, where each quadtree node is represented by a retangle and ech rectangle represents a spatial region.Assuming we're storing locations in the world, we can imagine a quadtree with a maximum node capacity n as follow: 
+  - A quadtree lend itself well to storing spatial data because it can be represented as a grid filled with rectangles that are recursively subdivided into four sub-rectangles, where each quadtree node is represented by a rectangle and each rectangle represents a spatial region.Assuming we're storing locations in the world, we can imagine a quadtree with a maximum node capacity n as follow: 
      - the root node, which representgs the entire world, is the outermost rectangle
-     - if the entire world has more than n location, the outermost rectangle is divided into four quadrants,each representing a region of the world.
+     - if the entire world has more than n location, the outermost rectangle is divided into four quadrants,each representing a region of the wrld.
      - so long as a region has more than n locations, its corresponding rectangle is subdivided into four quadrants.
      - Regions that have fewer than n locations are undivided rectangles (leaf node)
      - the parts of the grid that have many subdivided rectangles represent densely populated areas(like cities). while the parts of the grid that have few subdivided rectangles represent sparsely populated areas
    - finding a given location in a perfect quadtree is an extremely fast operation that runs in log4(x) time (where x is the total number of locations), since quadtree nodes have four children nodes
+# Replication And Sharding: 
+ - Replication: 
+ - Sharding: Data partitioning, base on a client's region, base on type of data being stored, base on hash of a column
+ - Hot Spot: distributing a workload across a set of servers, that workload migh be spread unevenly. this can happen if your sharding key or your hashing  function are suboptimal, or if your workload is naturally skewed: so"me servers will receive a lot more traffic than others, thus creating a " hot spot"
+#   Leader  Election:
+- The Process by which nodes in cluster elect a so called leader amongst them, responsible for the primary operations of the service that these nodes support. When correctly implemented, leader election guarantees that all nodes in the cluster know which one is the leader at any given time and can elect a new leader if the leader dies for whatever reason.
