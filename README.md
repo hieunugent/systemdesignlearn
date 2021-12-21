@@ -130,3 +130,7 @@
 - The Process by which nodes in cluster elect a so called leader amongst them, responsible for the primary operations of the service that these nodes support. When correctly implemented, leader election guarantees that all nodes in the cluster know which one is the leader at any given time and can elect a new leader if the leader dies for whatever reason.
 - Consensus Algorithm: A type of complex algorithms used to have multiple entities agree agree on a single data value, like who the "leader" is amongst a group of machines. Two popular consensus  algorithms are Paxos and Raft
 - Paxos and Raft: Two consensus algorithms that when implemented correctly, allow for the synchronization of certain operations, even in a distributed setting
+- use in third party service - don't want to connect third party srvice direct, need middle man to do that 
+- assume that this only have one service and it could be fail increase more service but how to ensure that no doublicate - is the leader comming to take the role of not dublicate, if current leader fail the other take place
+- Zookeeper and Etcd help to implement the leader election
+
