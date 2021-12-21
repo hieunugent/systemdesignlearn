@@ -128,3 +128,5 @@
  - Hot Spot: distributing a workload across a set of servers, that workload migh be spread unevenly. this can happen if your sharding key or your hashing  function are suboptimal, or if your workload is naturally skewed: so"me servers will receive a lot more traffic than others, thus creating a " hot spot"
 #   Leader  Election:
 - The Process by which nodes in cluster elect a so called leader amongst them, responsible for the primary operations of the service that these nodes support. When correctly implemented, leader election guarantees that all nodes in the cluster know which one is the leader at any given time and can elect a new leader if the leader dies for whatever reason.
+- Consensus Algorithm: A type of complex algorithms used to have multiple entities agree agree on a single data value, like who the "leader" is amongst a group of machines. Two popular consensus  algorithms are Paxos and Raft
+- Paxos and Raft: Two consensus algorithms that when implemented correctly, allow for the synchronization of certain operations, even in a distributed setting
