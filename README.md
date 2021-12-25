@@ -140,4 +140,4 @@
 - polling : the act of fetching a resource or piece of data regularly at an interval to make sure your data is not too stale
 - streaming : in networking, it usually refers to the act of continuously getting a feed of information from a server by keeping an open connection between  the two machines or processes
 # Configuration: 
-- A set  of parameters or constants that are critical to a system. configuration is typically written in JSOn or YAML and can be either static,
+- A set  of parameters or constants that are critical to a system. configuration is typically written in JSOn or YAML and can be either static,meanign that its hard-coded in and shipped with your system's application code( like frontend code , for instance)
