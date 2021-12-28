@@ -142,3 +142,4 @@
 # Configuration: 
 - A set  of parameters or constants that are critical to a system. configuration is typically written in JSOn or YAML and can be either static,meaning  that its hard-coded in and shipped with your system's application code( like frontend code , for instance), or dynamic, meaning that it live outside if your system's application code
 # Rate limiting: 
+- the act of limiting the number of requests sent to or from or a system. rate limiting is most often used ti limit the number of incoming requests in order to prevent DOS attackss aand can be enforce at the IP address level, at the user account level , or at the region level. for example. Rate limiting can also be implemeting  in tiers. for instance, atype of network request could be limited to 1 per second, per 5s , per 10s, per 10 min.
