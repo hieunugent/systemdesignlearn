@@ -133,4 +133,6 @@
 - use in third party service - don't want to connect third party srvice direct, need middle man to do that 
 - assume that this only have one service and it could be fail increase more service but how to ensure that no doublicate - is the leader comming to take the role of not dublicate, if current leader fail the other take place
 - Zookeeper and Etcd help to implement the leader election
-
+# peer to peer Network: 
+ - collection of machines referred to as peers that divide a workload between themselves to presumably complete the workload faster than would otherwise be possible. Peer to Peer networks are often used in file-distribution systems
+- Gossip Protocol: when a set of machines talk to each other in a uncoordinate manner in a cluster to spread information through a system without requiring a central source of data
