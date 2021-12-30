@@ -135,12 +135,12 @@
 - Zookeeper and Etcd help to implement the leader election
 # peer to peer Network: 
  - collection of machines referred to as peers that divide a workload between themselves to presumably complete the workload faster than would otherwise be possible. Peer to Peer networks are often used in file-distribution systems
-- Gossip Protocol: when a set of machines talk to each other in a uncoordinate manner in a cluster to spread information through a system without requiring a central source of data
+- Gossip Protocol: when a set of machines talk to each other in a un-coordinate manner in a cluster to spread information through a system without requiring a central source of data
 # Polling and Streaming : 
 - polling : the act of fetching a resource or piece of data regularly at an interval to make sure your data is not too stale
 - streaming : in networking, it usually refers to the act of continuously getting a feed of information from a server by keeping an open connection between  the two machines or processes
 # Configuration: 
 - A set  of parameters or constants that are critical to a system. configuration is typically written in JSOn or YAML and can be either static,meaning  that its hard-coded in and shipped with your system's application code( like frontend code , for instance), or dynamic, meaning that it live outside if your system's application code
 # Rate limiting: 
-- the act of limiting the number of requests sent to or from or a system. rate limiting is most often used ti limit the number of incoming requests in order to prevent DOS attackss aand can be enforce at the IP address level, at the user account level , or at the region level. for example. Rate limiting can also be implemeting  in tiers. for instance, atype of network request could be limited to 1 per second, per 5s , per 10s, per 10 min.
+- the act of limiting the number of requests sent to or from or a system. rate limiting is most often used ti limit the number of incoming requests in order to prevent DOS attacks and can be enforce at the IP address level, at the user account level , or at the region level. for example. Rate limiting can also be implementing  in tiers. for instance, a type of network request could be limited to 1 per second, per 5s , per 10s, per 10 min.
 - DOS attack:
