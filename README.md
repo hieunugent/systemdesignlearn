@@ -142,5 +142,7 @@
 # Configuration: 
 - A set  of parameters or constants that are critical to a system. configuration is typically written in JSOn or YAML and can be either static,meaning  that its hard-coded in and shipped with your system's application code( like frontend code , for instance), or dynamic, meaning that it live outside if your system's application code
 # Rate limiting: 
-- the act of limiting the number of requests sent to or from or a system. rate limiting is most often used ti limit the number of incoming requests in order to prevent DOS attacks and can be enforce at the IP address level, at the user account level , or at the region level. for example. Rate limiting can also be implementing  in tiers. for instance, a type of network request could be limited to 1 per second, per 5s , per 10s, per 10 min.
-- DOS attack:
+- the act of limiting the number of requests sent to or from or a system. rate limiting is most often used time limit the number of incoming requests in order to prevent DOS attacks and can be enforce at the IP address level, at the user account level , or at the region level, for example. Rate limiting can also be implementing in tiers. for instance, a type of network request could be limited to 1 per second, per 5s, per 10s, per 10 min.
+- DOS attack: short for denial of service attack, a dos attack in which a malicious user tries to bring down or damage a system in order to render it unavailable to users. much of the time, it consists of flooding it with traffic. some Dos attacks are easily preventable with rate limiting, while others ca be far trickier to defend against.
+- DDos attack: short for distribute DOS attack . a DDOS attack is a Dos attack with the traffic flooding the target system comes from many different sources (like a thousand of machines), making it much harder to defend against
+- Redis service
