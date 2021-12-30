@@ -136,3 +136,6 @@
 # peer to peer Network: 
  - collection of machines referred to as peers that divide a workload between themselves to presumably complete the workload faster than would otherwise be possible. Peer to Peer networks are often used in file-distribution systems
 - Gossip Protocol: when a set of machines talk to each other in a uncoordinate manner in a cluster to spread information through a system without requiring a central source of data
+# Polling nad Streaming : 
+- polling : the act of fetching a resource or piece of data regularly at an interval to make sure your data is not too stale
+- streaming : in networking, it usually refers to the act of continously getting a feed of information from a server by keeping an open connection between  the two machines or processes
