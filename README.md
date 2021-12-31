@@ -146,3 +146,8 @@
 - DOS attack: short for denial of service attack, a dos attack in which a malicious user tries to bring down or damage a system in order to render it unavailable to users. much of the time, it consists of flooding it with traffic. some Dos attacks are easily preventable with rate limiting, while others ca be far trickier to defend against.
 - DDos attack: short for distribute DOS attack . a DDOS attack is a Dos attack with the traffic flooding the target system comes from many different sources (like a thousand of machines), making it much harder to defend against
 - Redis service
+
+# Logging and monitoring: 
+- logging the act of collectung and storing logs-useful information about events in your systems. typically your programs will output log messages to iots STDOUT ir STDERR pipes, which will automatically get aggregated into a centralized logging solution
+- monitoring: the process having visibility into a systems key metrics, monitoring is typically implemented by collecting important events in a system and aggregating them in human readable charts
+- Alerting: the process through which system administrator get notified when critical system issues occur. Alerting can be set up by defining specific threholds on monitoring chart, past which alerts are sent to communication channel like slack
