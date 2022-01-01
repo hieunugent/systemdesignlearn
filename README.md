@@ -150,4 +150,19 @@
 # Logging and monitoring: 
 - logging the act of collectung and storing logs-useful information about events in your systems. typically your programs will output log messages to iots STDOUT ir STDERR pipes, which will automatically get aggregated into a centralized logging solution
 - monitoring: the process having visibility into a systems key metrics, monitoring is typically implemented by collecting important events in a system and aggregating them in human readable charts
-- Alerting: the process through which system administrator get notified when critical system issues occur. Alerting can be set up by defining specific threholds on monitoring chart, past which alerts are sent to communication channel like slack
+- Alerting: the process through which system administrator get notified when critical system issues occur. Alerting can be set up by defining specific threaholds on monitoring chart, past which alerts are sent to communication channel like slack
+# publish/Subscribe Pattern: 
+- Often shorten as Pub/Sub, is a popular messaging model that consist of publisher adn subscribers. publishers publish massages to special topics without caring about or even knowing who will read those messages, and subscribe to topics and read message coming through those topic. Pub/Subs systems often come with very powerful guarantees like at least once delivery, persistent storage, ordering of messages and replay ability of messages
+# Idempotent Operation: 
+- A operation that has the same ultimate outcome regardless of how many times its performed . if an operation can be performed multiple times without changing its overall effect, its idempotent.Operations performed through a pub/sub messaging system typical have to be idempotent, since PUb/SUb systems tend to allow the same messages to be consumed multiple line
+ex: increasing an integer value in a database is not an idempotent operation, since repeating this operation will not have the same effect as if it had been performed only once . Conversely, setting a value to "COMPLETE" is an idempotent operation, since repeating operation will always yield the same result: the value will be " COMPLETE"
+- Cloud PUB/sub , Apache Kafka
+# Map Reduce: 
+- a popular framework for processing very large dataset in a distributed setting effiently, quickly, and in a fault-tolerant manner. A mapReduce job is comprised of 3 main steps: 
+- the map step, which runs a map function on the various chunks of the dataset and transforms these chunks into intermediate key value pairs
+- shuffle step, which reorganizes the intermediate key-value pairs such that pairs of the same key are routed to the same machine in the final step
+- the reduce step, which runs a reduce function on the newly shuffled key value pairs and transforms them into  more meaningful data
+# Distributed File System: 
+- a Distributed File System is an abstraction over a usually large cluster of machines that allows them to act like one large file system. The two most popular implementations of DFS are the Google File System (GFS) and the Hadoop Distributed File System(HDFS).
+- Typicallly DFSs take care of rtegh calassic availability and replication guarantees that can be tricky to obtain in a distributed-system setting.the overarching idea is that files are split into chunks of a certain size, and those chunksare sharded across a large cluster of machines. A central control plane is in charge of deciding where each chunk resides, routing reads to the right nodes, adn handling communication between machines
+- Different DFS implementations have slightly different APIs and sematics but they achieve the same common goal: extremely large scale persistent storage.
